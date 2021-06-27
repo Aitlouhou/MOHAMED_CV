@@ -1,0 +1,47 @@
+body{ background-color:#87b3cf ;}
+.conteneur{width:1000PX;
+margin: 130px auto;
+display: flex;
+
+}
+.left{
+
+    background-image: url('image.jpg');
+    width: 50%;
+    border: #365C8C 2px solid;
+}
+.right{background-color:white ;
+width: 50%;
+border: #365C8C 2px solid;
+padding: 40px 90px;
+}
+.text{
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+form{display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+input{ border-radius:8px;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+input[type="submit"]{
+  background-color: #1e5490;
+  color:white;
+  width:20%;
+
+}
+@media screen and (max-width: 700px ){
+  .right{
+    width: 100%;
+  }
+  .conteneur{
+    width: 500PX;
+  }
+  .left {
+    display :none;
+  }
+}
